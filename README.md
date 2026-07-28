@@ -78,7 +78,3 @@ Live runtime:
 - runtime SQLite state, local health files and broker exports;
 - raw/normalized market-data dumps;
 - private workflow notes and generated caches.
-
-Best positioning: self-taught Python trading systems candidate with evidence in
-causal backtesting, market-data tooling, robustness validation, execution-cost
-modeling, reporting and brokerless MT5 runtime engineering.
