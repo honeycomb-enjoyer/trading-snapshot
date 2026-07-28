@@ -1,0 +1,15 @@
+[project]
+name = "live-trading"
+version = "0.0.0"
+description = "Sanitized MT5 live-trading runtime snapshot"
+requires-python = ">=3.12,<3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+markers = [
+    "unit: isolated deterministic test with no external services",
+    "integration: test spanning multiple local components",
+    "brokerless: test uses an MT5 fake and must not contact a terminal",
+    "slow: test excluded from the default CI suite",
+]

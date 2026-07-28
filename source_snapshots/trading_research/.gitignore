@@ -1,0 +1,21 @@
+.venv/
+.tox/
+__pycache__/
+*.pyc
+*.png
+*.csv
+!data/raw/mt5/*.csv
+!data/raw/dukascopy/*.csv
+data/raw/dukascopy/source/
+data/raw/dukascopy/*_M1_*.csv
+data/raw/histdata/source/
+reports/
+
+# secrets
+config/local.yaml
+credentials.json
+
+# MT5 / IDE
+*.log
+.vscode/
+.idea/

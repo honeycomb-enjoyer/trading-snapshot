@@ -1,0 +1,6 @@
+-r requirements-runtime.txt
+
+# Reproducible local/CI verification tooling.
+detect-secrets==1.5.0
+pytest==9.1.1
+tox==4.32.0

@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "portfolio": {
+    "name": "ThreeStrategy_Portfolio_Profile",
+    "components": [
+      {
+        "label": "B",
+        "profile": "BasicMeanReversion_AUDCAD",
+        "risk_pct": 1.0,
+        "strategy_name": "BasicMeanReversion_AUDCAD",
+        "symbol": "AUDCAD",
+        "strategy_class": "BasicMeanReversion",
+        "source_net_r": 129.4084276485923,
+        "source_max_dd_r": 13.876389351871154
+      },
+      {
+        "label": "E",
+        "profile": "MeanReversionWithReturnFilter_EURGBP",
+        "risk_pct": 0.75,
+        "strategy_name": "MeanReversionWithReturnFilter_EURGBP",
+        "symbol": "EURGBP",
+        "strategy_class": "MeanReversionWithReturnFilter",
+        "source_net_r": 36.663628915347346,
+        "source_max_dd_r": 4.466400025685681
+      },
+      {
+        "label": "X",
+        "profile": "ContinuationBreakout_XAUUSD",
+        "risk_pct": 0.65,
+        "strategy_name": "ContinuationBreakout_XAUUSD",
+        "symbol": "XAUUSD",
+        "strategy_class": "ContinuationBreakout",
+        "source_net_r": 87.48480294753261,
+        "source_max_dd_r": 9.368793508657042
+      }
+    ]
+  },
+  "dataset": {
+    "mode": "assembled_from_strategy_profiles",
+    "bars": 2063701,
+    "start": "2021-01-03T23:00:00+00:00",
+    "end": "2026-07-15T20:55:00+00:00",
+    "timeframe_model": "union of component intraday timestamps; missing component bars are forward-filled"
+  },
+  "performance": {
+    "events": {
+      "total_trades": 2330,
+      "wins": 1444,
+      "losses": 886,
+      "be_trades": 0,
+      "winrate": 61.97424892703862,
+      "winrate_no_be": 61.97424892703862,
+      "net_r": 214.21523739701152,
+      "max_drawdown": 14.300050183209407,
+      "profit_factor": 1.2875248029323219,
+      "expectancy": 0.09193787012747276,
+      "avg_win": 0.664298781561699,
+      "avg_loss": -0.8408941345125079,
+      "best_trade": 3.3308315228127383,
+      "worst_trade": -1.1407089151449887,
+      "execution_costs": {
+        "average_r": 0.0,
+        "median_r": 0.0,
+        "p90_r": 0.0,
+        "total_r": 0.0,
+        "average_components_r": {
+          "spread_cost_r": 0.0,
+          "slippage_cost_r": 0.0,
+          "commission_cost_r": 0.0,
+          "swap_cost_r": 0.0
+        },
+        "average_rollover_units": 0.0
+      }
+    },
+    "intraday_mtm_drawdown_pct": 15.44131227638698,
+    "balance_drawdown_pct": 14.300050183209521,
+    "final_balance_pct": 214.21523739701183,
+    "final_equity_pct": 214.21523739701172,
+    "max_consecutive_event_wins": 14,
+    "max_consecutive_event_losses": 8,
+    "drawdown_episode": {
+      "max_drawdown_pct": 14.300050183209407,
+      "peak_event_index": 2246,
+      "trough_event_index": 2280,
+      "recovery_event_index": null,
+      "events_peak_to_trough": 34,
+      "events_peak_to_recovery": null,
+      "peak_time": "2026-05-05T21:05:00+00:00",
+      "trough_time": "2026-06-09T13:49:00+00:00",
+      "recovery_time": null
+    },
+    "rolling_365d": {
+      "min_pct": -0.6537888723732933,
+      "median_pct": 37.757488154211735,
+      "max_pct": 69.8485142816278
+    }
+  },
+  "exposure": {
+    "calendar_time_in_market_pct": 46.17473303671702,
+    "bars_with_position_pct": 65.04857050512646,
+    "max_simultaneous_positions": 3,
+    "overlap_pct_when_either_active": {
+      "BE": 11.216195860481275,
+      "BX": 17.86609019239503,
+      "EX": 10.293494177323282
+    }
+  },
+  "daily_equity": {
+    "reset_timezones": {
+      "UTC": {
+        "days": 1731,
+        "days_with_position": 1550,
+        "loss_from_opening_balance_pct": {
+          "mean": 0.6315901360322501,
+          "median": 0.4536844536845024,
+          "p90": 1.6142772141776902,
+          "p95": 1.987978995080482,
+          "p99": 2.559616110542574,
+          "max": 3.2719369853227818
+        },
+        "loss_from_opening_equity_pct": {
+          "mean": 0.6795220688784741,
+          "median": 0.48012003000749814,
+          "p90": 1.6934003760916596,
+          "p95": 2.0407456678639875,
+          "p99": 2.6029121506232267,
+          "max": 3.1113186482916433
+        },
+        "loss_from_day_start_baseline_pct": {
+          "mean": 0.7462164607330324,
+          "median": 0.5780639302473674,
+          "p90": 1.77768221258059,
+          "p95": 2.133314775518926,
+          "p99": 2.709305101554933,
+          "max": 3.2719369853227818
+        },
+        "daily_equity_range_pct": {
+          "mean": 1.5061611640275607,
+          "median": 1.540566576320174,
+          "p90": 2.762538109354576,
+          "p95": 3.1025592116640652,
+          "p99": 3.914503187579586,
+          "max": 5.808384644629598
+        },
+        "pessimistic_peak_to_trough_pct": {
+          "mean": 1.1580861288350333,
+          "median": 1.0958904109589298,
+          "p90": 2.276846397825153,
+          "p95": 2.6358596399607626,
+          "p99": 3.277472176122129,
+          "max": 4.186860272974883
+        },
+        "absolute_daily_balance_change_pct": {
+          "mean": 0.7197655563369465,
+          "median": 0.4418713062308939,
+          "p90": 1.920983501390367,
+          "p95": 2.2429182261584266,
+          "p99": 3.230770195957743,
+          "max": 5.104943075022078
+        }
+      },
+      "Europe/Prague": {
+        "days": 1728,
+        "days_with_position": 1523,
+        "loss_from_opening_balance_pct": {
+          "mean": 0.6273639336275549,
+          "median": 0.4387735839428615,
+          "p90": 1.6326771324020877,
+          "p95": 1.9991544319870855,
+          "p99": 2.5597597939149614,
+          "max": 3.2719369853227818
+        },
+        "loss_from_opening_equity_pct": {
+          "mean": 0.68229796661929,
+          "median": 0.49833489986029633,
+          "p90": 1.6893091599905303,
+          "p95": 2.0460372714264947,
+          "p99": 2.577337316735045,
+          "max": 3.242698211573966
+        },
+        "loss_from_day_start_baseline_pct": {
+          "mean": 0.7421907877891607,
+          "median": 0.5741810082791439,
+          "p90": 1.810748709223188,
+          "p95": 2.1285922479954356,
+          "p99": 2.7092122192923203,
+          "max": 3.2719369853227818
+        },
+        "daily_equity_range_pct": {
+          "mean": 1.4955144696339249,
+          "median": 1.5577527719251862,
+          "p90": 2.724710831728018,
+          "p95": 3.127694356623408,
+          "p99": 3.9680746021935738,
+          "max": 5.103452808415653
+        },
+        "pessimistic_peak_to_trough_pct": {
+          "mean": 1.1519776201155054,
+          "median": 1.0919087897505477,
+          "p90": 2.301977165548291,
+          "p95": 2.6332907503771277,
+          "p99": 3.274141033298315,
+          "max": 4.186860272974883
+        },
+        "absolute_daily_balance_change_pct": {
+          "mean": 0.7172991409902271,
+          "median": 0.43456073475521784,
+          "p90": 1.919823808577749,
+          "p95": 2.2555871321263457,
+          "p99": 3.3205024118305833,
+          "max": 4.721950125984634
+        }
+      },
+      "Etc/GMT-3": {
+        "days": 1542,
+        "days_with_position": 1433,
+        "loss_from_opening_balance_pct": {
+          "mean": 0.6953041340021258,
+          "median": 0.5516879721118784,
+          "p90": 1.689716624806278,
+          "p95": 2.020866723948404,
+          "p99": 2.6601595264790445,
+          "max": 3.2719369853227818
+        },
+        "loss_from_opening_equity_pct": {
+          "mean": 0.7448304781463042,
+          "median": 0.5649426082559623,
+          "p90": 1.7310658403319117,
+          "p95": 2.0669749679110807,
+          "p99": 2.675866720285429,
+          "max": 3.2531265947734482
+        },
+        "loss_from_day_start_baseline_pct": {
+          "mean": 0.8239599625467294,
+          "median": 0.6586784190086172,
+          "p90": 1.8558009536045093,
+          "p95": 2.1297178087127775,
+          "p99": 2.7727530496168202,
+          "max": 3.2719369853227818
+        },
+        "daily_equity_range_pct": {
+          "mean": 1.651983933365669,
+          "median": 1.6725128215294713,
+          "p90": 2.8425579639747376,
+          "p95": 3.2023651971089806,
+          "p99": 4.015465759389457,
+          "max": 5.161015481200025
+        },
+        "pessimistic_peak_to_trough_pct": {
+          "mean": 1.285484112200569,
+          "median": 1.2150478695528477,
+          "p90": 2.345463988102185,
+          "p95": 2.6813207771215755,
+          "p99": 3.3884231007878998,
+          "max": 4.186860272974883
+        },
+        "absolute_daily_balance_change_pct": {
+          "mean": 0.8067707229122304,
+          "median": 0.6711931756967502,
+          "p90": 2.013046832529835,
+          "p95": 2.3384742464153327,
+          "p99": 3.3186940615275957,
+          "max": 4.721950125984634
+        }
+      }
+    }
+  },
+  "margin": {
+    "unit": "percent of account equity occupied at configured risk weights",
+    "scenarios": {
+      "baseline_mixed_leverage": {
+        "mean": 2.768508813020092,
+        "median": 2.95199544641407,
+        "p90": 6.215067877722594,
+        "p95": 7.459683303438412,
+        "p99": 9.354284136859215,
+        "max": 13.3364816759141,
+        "active_p95": 8.016790172757283,
+        "bars_above_100pct": 0
+      },
+      "all_symbols_1_20": {
+        "mean": 11.228818098240518,
+        "median": 11.416861866318431,
+        "p90": 24.70436061841431,
+        "p95": 28.456445985011896,
+        "p99": 35.596428119052405,
+        "max": 49.46857742023041,
+        "active_p95": 31.032216530237548,
+        "bars_above_100pct": 0
+      },
+      "all_symbols_1_30": {
+        "mean": 7.485878732160346,
+        "median": 7.611241244212287,
+        "p90": 16.46957374560954,
+        "p95": 18.97096399000793,
+        "p99": 23.730952079368272,
+        "max": 32.97905161348694,
+        "active_p95": 20.688144353491698,
+        "bars_above_100pct": 0
+      }
+    },
+    "scenario_config": {
+      "baseline_mixed_leverage": {
+        "default_leverage": 100,
+        "overrides": {
+          "X": 30
+        }
+      },
+      "all_symbols_1_20": {
+        "default_leverage": 20,
+        "overrides": {}
+      },
+      "all_symbols_1_30": {
+        "default_leverage": 30,
+        "overrides": {}
+      }
+    }
+  },
+  "prop_rules": {
+    "name": "Generic two-step evaluation",
+    "reset_timezone": "Etc/GMT-3",
+    "phase_targets_pct": [
+      10.0,
+      6.0
+    ],
+    "daily_loss_limit_pct": 4.0,
+    "max_loss_limit_pct": 12.0,
+    "daily_loss_baseline": "max_opening_balance_opening_equity",
+    "target_requires_flat": true,
+    "rolling_start_weekday": 0,
+    "horizons_days": [
+      365,
+      730
+    ]
+  },
+  "challenge": {
+    "365": {
+      "starts": 155,
+      "pass_pct": 92.90322580645162,
+      "fail_pct": 2.5806451612903225,
+      "unresolved_pct": 4.516129032258064,
+      "median_days_to_pass": 121.30555555555556,
+      "mean_days_to_pass": 127.10840084876544,
+      "fail_causes_pct": {
+        "max_loss": 2.5806451612903225
+      }
+    },
+    "730": {
+      "starts": 155,
+      "pass_pct": 92.90322580645162,
+      "fail_pct": 2.5806451612903225,
+      "unresolved_pct": 4.516129032258064,
+      "median_days_to_pass": 121.30555555555556,
+      "mean_days_to_pass": 127.10840084876544,
+      "fail_causes_pct": {
+        "max_loss": 2.5806451612903225
+      }
+    }
+  },
+  "monte_carlo": {
+    "mode": "trade_shuffle",
+    "simulations": 1000,
+    "median_final_r": 214.21523739701146,
+    "mean_final_r": 214.21523739701146,
+    "best_final_r": 214.21523739701217,
+    "worst_final_r": 214.2152373970109,
+    "p5_final_r": 214.2152373970111,
+    "p95_final_r": 214.2152373970119,
+    "mean_dd": 18.8850664482365,
+    "median_dd": 18.046991547839696,
+    "best_dd": 10.748743985936756,
+    "worst_dd": 38.03072481276953,
+    "p95_dd": 27.273105934790827,
+    "dd_gt_10": 100.0,
+    "dd_gt_15": 81.6,
+    "dd_gt_20": 34.4,
+    "dd_gt_30": 2.1,
+    "prob_negative": 0.0,
+    "prob_ruin": 0.0,
+    "profitable_runs_pct": 100.0
+  },
+  "correlation": {
+    "daily_closed_return_pct": {
+      "B": {
+        "B": 1.0,
+        "E": -0.018266,
+        "X": 0.014666
+      },
+      "E": {
+        "B": -0.018266,
+        "E": 1.0,
+        "X": -0.001258
+      },
+      "X": {
+        "B": 0.014666,
+        "E": -0.001258,
+        "X": 1.0
+      }
+    }
+  },
+  "limitations": [
+    "Portfolio profile is assembled from completed strategy_profile artifacts; it does not re-run strategy logic.",
+    "Component intraday equity is exact only at each component profile timeframe; between missing timestamps it is forward-filled.",
+    "The report does not model live portfolio guards that reject new entries, force-close positions, or resize orders after a breach.",
+    "Trade-shuffle Monte Carlo breaks cross-strategy timing and regime dependence; use it only as a rough tail diagnostic.",
+    "Evaluation rolling starts overlap and should be read as a historical stress map, not independent probabilities."
+  ]
+}

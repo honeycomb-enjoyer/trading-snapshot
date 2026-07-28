@@ -1,0 +1,5 @@
+# Research runtime dependencies. Matplotlib is pinned because report rendering is supported.
+MetaTrader5==5.0.5735
+matplotlib==3.11.0
+numpy==2.5.0
+pandas==3.0.3

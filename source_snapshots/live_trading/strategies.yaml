@@ -1,0 +1,31 @@
+# Canonical identity registry for the sanitized live-trading snapshot.
+#
+# This file owns only stable strategy identity:
+#   symbol, asset_class, magic, account, enabled
+#
+# Trading behavior stays in strategies/<id>/config.py. Keeping identity and
+# behavior separate prevents drift between broker/runtime routing and strategy
+# parameters.
+
+strategies:
+
+  audcad_h4_reversion:
+    symbol: "AUDCAD"
+    asset_class: "FX"
+    magic: 46001
+    account: "hub_demo"
+    enabled: true
+
+  eurgbp_h4_reversion_return_filter:
+    symbol: "EURGBP"
+    asset_class: "FX"
+    magic: 52001
+    account: "hub_demo"
+    enabled: true
+
+  xau_h4_continuation_breakout:
+    symbol: "XAUUSD"
+    asset_class: "METAL"
+    magic: 53001
+    account: "hub_demo"
+    enabled: true
