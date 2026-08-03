@@ -9,7 +9,7 @@ tests and fail-closed MT5 execution architecture.
 
 If you have 5 minutes:
 
-1. Open [EVIDENCE_PACKAGE_OVERVIEW.pdf](EVIDENCE_PACKAGE_OVERVIEW.pdf).
+1. Open [PORTFOLIO_SNAPSHOT.pdf](PORTFOLIO_SNAPSHOT.pdf).
 2. Skim the sample reports:
    - [strategy profile](source_snapshots/trading_research/sample_reports/strategy_profile/ContinuationBreakout_XAUUSD/summary.md)
    - [portfolio profile](source_snapshots/trading_research/sample_reports/portfolio_profile/ThreeStrategy_Portfolio_Profile/summary.md)
