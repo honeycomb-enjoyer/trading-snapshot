@@ -1,12 +1,9 @@
-# Trading Systems Evidence Package
+# Personal Trading Portfolio Snapshot
 
 This repository is a curated snapshot of self-built trading research and
 execution infrastructure. It is meant to show engineering process: data
 contracts, causal backtesting, robustness testing, reporting, brokerless runtime
 tests and fail-closed MT5 execution architecture.
-
-It is not an institutional track record, a managed-account offer, or a promise
-that the included strategies are production alpha.
 
 ## Fast Review
 
